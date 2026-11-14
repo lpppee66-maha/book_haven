@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a class="brand" href="index.html">
+            <img src="images/logo.png" alt="Book Haven Logo">
+            <span>Book Haven</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="products.html">Books</a></li>               
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="hero-copy">
+
+                <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+
+                <h1>
+                    Find a book.
+                    <br>
+                    <em>Find a new world.</em>
+                </h1>
+
+                <p>
+                    Explore stories, discover new ideas, and find
+                    your next favorite read at Book Haven.
+                </p>
+
+                <div class="actions">
+                    <a class="btn" href="products.html">
+                        Explore Books
+                    </a>
+
+                    <!-- Moves to Popular Books in the same page -->
+                    <a class="btn btn-outline" href="#popular-books">
+                        Popular Books
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-art">
+               <img src="images/logo.png" alt="Book Haven Logo">
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIES SECTION -->
+        <section class="section soft-section" id="categories">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">EXPLORE BY GENRE</p>
+
+                <h2>What Would You Like to Read?</h2>
+
+                <p>
+                    Explore different genres and discover books
+                    that match your interests.
+                </p>
+
+            </div>
+
+            <div class="category-grid">
+
+                <a href="products.html?category=Fiction">
+                    Fiction <span>→</span>
+                </a>
+
+                <a href="products.html?category=Romance">
+                    Romance <span>→</span>
+                </a>
+
+                <a href="products.html?category=Fantasy">
+                    Fantasy <span>→</span>
+                </a>
+
+                <a href="products.html?category=Self-Development">
+                    Self-Development <span>→</span>
+                </a>
+
+                <a href="products.html?category=Education">
+                    Education <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+<section class="featured-products reveal" id="popular-books">
+
+    <div class="section-heading">
+        <p class="eyebrow">POPULAR BOOKS</p>
+        <h2>Explore Our Popular Books</h2>
+        <p>
+            Discover our popular books and find your next favorite read.
+        </p>
+    </div>
+
+    <div class="mini-grid">
+
+        <a href="product-details.html?id=atomic-habits"
+           class="mini-card hover-photo">
+            <img src="images/atomic-habits.png" alt="Atomic Habits">
+            <span>Atomic Habits</span>
+        </a>
+
+        <a href="product-details.html?id=silent-patient"
+           class="mini-card hover-photo">
+            <img src="images/silent-patient.png" alt="The Silent Patient">
+            <span>The Silent Patient</span>
+        </a>
+
+        <a href="product-details.html?id=and-then-there-were-none"
+           class="mini-card hover-photo">
+            <img src="images/and-none.png" alt="And Then There Were None">
+            <span>And Then There Were None</span>
+        </a>
+
+        <a href="product-details.html?id=pride"
+           class="mini-card hover-photo">
+            <img src="images/pride-prejudice.png" alt="Pride and Prejudice">
+            <span>Pride and Prejudice</span>
+        </a>
+
+    </div>
+
+    <div class="actions">
+        <a href="products.html" class="primary-btn">
+            Explore All Books
+        </a>
+    </div>
+
+</section>
+
+
+        <!-- BOOK INFORMATION TABLE -->
+        <section class="book-table-section reveal">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">QUICK BOOK GUIDE</p>
+
+                <h2>Compare Book Details</h2>
+
+                <p>
+                    Use this table to quickly compare the authors,
+                    categories, and prices of our selected books.
+                </p>
+
+            </div>
+
+            <table class="book-table">
+
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Atomic Habits</td>
+                        <td>James Clear</td>
+                        <td>Self-Help</td>
+                        <td>55 SAR</td>
+                    </tr>
+
+                    <tr>
+                        <td>The Alchemist</td>
+                        <td>Paulo Coelho</td>
+                        <td>Fiction</td>
+                        <td>40 SAR</td>
+                    </tr>
+
+                    <tr>
+                        <td>The Hobbit</td>
+                        <td>Tolkien</td>
+                        <td>Fantasy</td>
+                        <td>52 SAR</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Book Haven Store. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
