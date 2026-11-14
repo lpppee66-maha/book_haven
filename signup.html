@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Haven | Sign Up</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .form-note {
+            text-align: center;
+            color: #786b60;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="brand">
+
+        <img
+            src="images/logo.png"
+            alt="Book Haven Logo"
+            class="logo-map"
+            usemap="#signupMap"
+        >
+
+        <map name="signupMap">
+
+            <area
+                shape="rect"
+                coords="0,0,250,100"
+                href="aboutus.html"
+                alt="About Book Haven"
+            >
+
+        </map>
+
+        <div>
+
+            <h1>Book Haven</h1>
+
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="books.html">Books</a>
+            </li>
+
+            <li>
+                <a class="active" href="signup.html">Sign Up</a>
+            </li>
+
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+
+            <li>
+                <a href="aboutus.html">About Us</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="auth-page">
+
+        <div class="form-card">
+
+            <div class="form-logo">
+
+                <img
+                    src="images/logo.png"
+                    alt="Book Haven"
+                >
+
+            </div>
+
+
+            <span class="section-label">
+                JOIN BOOK HAVEN
+            </span>
+
+
+            <h2>Create Your Account</h2>
+
+
+            <p class="form-note">
+                Create an account to enjoy a better Book Haven experience.
+            </p>
+
+
+            <form id="signupForm" novalidate>
+
+                <div class="form-group">
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="signupEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        name="signupEmail"
+                        placeholder="example@email.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="signupPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        name="signupPassword"
+                        placeholder="At least 6 characters"
+                        minlength="6"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Re-enter your password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn primary-btn full-width">
+                    Create Account
+                </button>
+
+
+                <p
+                    id="signupMessage"
+                    class="form-message">
+                </p>
+
+            </form>
+
+
+            <p class="form-footer-text">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login here
+                </a>
+
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Book Haven. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

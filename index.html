@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Haven | Home</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .home-welcome {
+            max-width: 850px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .home-welcome p {
+            line-height: 1.9;
+        }
+
+        .hero-title {
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="brand">
+
+        <!-- IMAGE MAPPING -->
+        <img
+            src="images/logo.png"
+            alt="Book Haven Logo"
+            class="logo-map"
+            usemap="#bookHavenMap"
+        >
+
+        <map name="bookHavenMap">
+            <area
+                shape="rect"
+                coords="0,0,250,100"
+                href="aboutus.html"
+                alt="Go to About Us"
+            >
+        </map>
+
+        <div>
+            <h1>Book Haven</h1>
+        </div>
+
+    </div>
+
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <span class="eyebrow">WELCOME TO BOOK HAVEN</span>
+
+            <h2 class="hero-title">
+                Discover Your Next Favorite Book
+            </h2>
+
+            <p>
+                Explore inspiring stories, unforgettable adventures,
+                and books that can change the way you think.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="books.html" class="btn primary-btn">
+                    Explore Books
+                </a>
+
+                <a href="#about-book-haven" class="btn secondary-btn">
+                    Learn More
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTERNAL LINK TARGET -->
+    <section id="about-book-haven" class="section home-welcome">
+
+        <span class="section-label">ABOUT OUR IDEA</span>
+
+        <h2>What is Book Haven?</h2>
+
+        <p>
+            Book Haven is an online bookstore designed to help readers
+            discover, explore, compare, and choose books from different
+            categories in one simple and convenient place.
+        </p>
+
+        <p>
+            Our website gives users an easy reading experience by allowing
+            them to search for books, filter books by category, view detailed
+            information, and add their favorite books to a shopping cart.
+        </p>
+
+        <a href="aboutus.html" class="text-link">
+            Learn more about Book Haven →
+        </a>
+
+    </section>
+
+
+    <!-- BENEFITS -->
+    <section class="section alt-section">
+
+        <div class="section-heading">
+
+            <span class="section-label">WHY BOOK HAVEN?</span>
+
+            <h2>Benefits for Readers</h2>
+
+        </div>
+
+        <div class="benefit-grid">
+
+            <article class="benefit-card">
+
+                <h3>Wide Collection</h3>
+
+                <p>
+                    Browse books from different categories and interests.
+                </p>
+            </article>
+
+
+            <article class="benefit-card">
+                <h3>Easy Search</h3>
+
+                <p>
+                    Quickly find books by title, author, or category.
+                </p>
+            </article>
+
+
+            <article class="benefit-card">
+                <h3>Simple Shopping</h3>
+
+                <p>
+                    Add books to your cart and manage your selected items.
+                </p>
+            </article>
+
+
+            <article class="benefit-card">
+                <h3>Better Experience</h3>
+
+                <p>
+                    Enjoy a clean and organized way to discover your next book.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section id="categories" class="section">
+
+        <div class="section-heading">
+
+            <span class="section-label">EXPLORE</span>
+
+            <h2>Book Categories</h2>
+
+            <p>
+                Choose a category and start exploring.
+            </p>
+
+        </div>
+
+        <div class="category-grid">
+
+            <a href="books.html?category=Fiction" class="category-card">
+                <h3>Fiction</h3>
+                <p>Stories that take you somewhere new.</p>
+            </a>
+
+            <a href="books.html?category=Mystery" class="category-card">
+                <h3>Mystery</h3>
+                <p>Discover secrets and unexpected twists.</p>
+            </a>
+
+            <a href="books.html?category=Romance" class="category-card">
+                <h3>Romance</h3>
+                <p>Stories about relationships and emotions.</p>
+            </a>
+
+            <a href="books.html?category=Fantasy" class="category-card">
+                <h3>Fantasy</h3>
+                <p>Enter worlds beyond imagination.</p>
+            </a>
+
+            <a href="books.html?category=Self-Development" class="category-card">                <h3>Self-Development</h3>
+                <p>Books that inspire personal growth.</p>
+            </a>
+
+            <a href="books.html?category=Education" class="category-card">
+                <h3>Education</h3>
+                <p>Learn and expand your knowledge.</p>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- POPULAR BOOKS -->
+    <section id="popular-books" class="section alt-section">
+
+        <div class="section-heading">
+
+            <span class="section-label">POPULAR</span>
+
+            <h2>Popular Books</h2>
+
+            <p>
+                Some of the books available at Book Haven.
+            </p>
+
+        </div>
+
+        <div
+            id="featured-books"
+            class="book-grid">
+        </div>
+
+    </section>
+
+
+    <!-- LIST -->
+    <section id="reading-benefits" class="section">
+
+        <div class="two-column">
+
+            <article>
+
+                <span class="section-label">READING</span>
+
+                <h2>Why Reading Matters</h2>
+
+                <p>
+                    Reading can be an enjoyable way to explore ideas,
+                    improve knowledge, and discover different perspectives.
+                </p>
+
+                <ul class="styled-list">
+
+                    <li>Improves knowledge and vocabulary.</li>
+
+                    <li>Encourages imagination and creativity.</li>
+
+                    <li>Provides entertainment and relaxation.</li>
+
+                    <li>Helps readers discover new perspectives.</li>
+
+                    <li>Supports continuous learning.</li>
+
+                </ul>
+
+            </article>
+
+
+            <article class="quote-card">
+
+                <p>
+                    "A reader lives a thousand lives before he dies."
+                </p>
+
+                <span>
+                    — George R. R. Martin
+                </span>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- TABLE -->
+    <section id="compare" class="section alt-section">
+
+        <div class="section-heading">
+
+            <span class="section-label">COMPARE</span>
+
+            <h2>Book Comparison</h2>
+
+            <p>
+                Compare some popular choices available at Book Haven.
+            </p>
+
+        </div>
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Book</th>
+                        <th>Category</th>
+                        <th>Author</th>
+                        <th>Price</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Atomic Habits</td>
+                        <td>Self-Development</td>
+                        <td>James Clear</td>
+                        <td>58 SAR</td>
+                    </tr>
+
+                    <tr>
+                        <td>The Alchemist</td>
+                        <td>Fiction</td>
+                        <td>Paulo Coelho</td>
+                        <td>40 SAR</td>
+                    </tr>
+
+                    <tr>
+                        <td>The Hobbit</td>
+                        <td>Fantasy</td>
+                        <td>J.R.R. Tolkien</td>
+                        <td>52 SAR</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-section">
+
+        <h2>Ready to Find Your Next Book?</h2>
+
+        <p>
+            Explore our collection and discover something worth reading.
+        </p>
+
+        <a href="books.html" class="btn primary-btn">
+            Browse All Books
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Book Haven. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

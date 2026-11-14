@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Haven | Book Details</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="brand">
+
+        <img
+            src="images/logo.png"
+            alt="Book Haven Logo"
+            class="logo-map"
+            usemap="#detailsMap"
+        >
+
+        <map name="detailsMap">
+
+            <area
+                shape="rect"
+                coords="0,0,250,100"
+                href="aboutus.html"
+                alt="About Book Haven"
+            >
+
+        </map>
+
+        <div>
+
+            <h1>Book Haven</h1>
+
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="books.html">Books</a>
+            </li>
+
+            <li>
+                <a href="signup.html">Sign Up</a>
+            </li>
+
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+
+            <li>
+                <a href="aboutus.html">About Us</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="section">
+
+        <nav class="breadcrumb">
+
+            <a href="index.html">Home</a>
+
+            <span>/</span>
+
+            <a href="books.html">Books</a>
+
+            <span>/</span>
+
+            <span>Book Details</span>
+
+        </nav>
+
+
+        <div
+            id="product-details"
+            class="details-card">
+
+            <div class="details-image-container">
+
+                <img
+                    id="detail-image"
+                    src="images/logo.png"
+                    alt="Book"
+                    class="details-image"
+                >
+
+            </div>
+
+
+            <div class="details-content">
+
+                <span
+                    id="detail-category"
+                    class="book-category">
+                    Category
+                </span>
+
+
+                <h2 id="detail-title">
+                    Book Title
+                </h2>
+
+
+                <p class="author">
+
+                    By
+                    <strong id="detail-author">
+                        Author
+                    </strong>
+
+                </p>
+
+
+                <p
+                    id="detail-description"
+                    class="description">
+                    Book description.
+                </p>
+
+
+                <div class="price-box">
+
+                    <span>
+                        Price
+                    </span>
+
+                    <strong id="detail-price">
+                        0 SAR
+                    </strong>
+
+                </div>
+
+
+                <div class="purchase-box">
+
+                    <label for="detail-quantity">
+                        Quantity
+                    </label>
+
+                    <input
+                        id="detail-quantity"
+                        type="number"
+                        min="1"
+                        value="1"
+                    >
+
+                    <button
+                        id="detail-add-cart"
+                        class="btn primary-btn"
+                        type="button">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <p id="detail-message"></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Book Haven. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
